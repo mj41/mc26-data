@@ -1,0 +1,13 @@
+{
+  "id": "26.3",
+  "name": "26.3",
+  "world_version": 5023,
+  "protocol_version": 777,
+  "java_version": 25,
+  "stable": true,
+  "server_jar_url": "https://piston-data.mojang.com/v1/objects/33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c/server.jar",
+  "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+  "extractor_repo": "github.com/mj41/mc26",
+  "extractor_commit": "190a89967ae4",
+  "extracted_at": "2026-10-03T15:39:48Z"
+}
