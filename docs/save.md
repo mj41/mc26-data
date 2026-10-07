@@ -413,7 +413,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -492,6 +494,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `RadiusOnUse`? (default 0.0): `FLOAT`
 - `RadiusPerTick`? (default 0.0): `FLOAT`
 - `Radius`? (default 3.0): `FLOAT`
+- `Owner`?: an NBT tag
 - `custom_particle`?: compound, `type` (id in minecraft:particle_type) selects
   - `minecraft:block`: compound `Block`
     - `block_state`: compound `BlockState`
@@ -613,7 +616,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -641,6 +646,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `state`?: enum `Armadillo$ArmadilloState` (var int, ids idle/rolling/scared/unrolling: IDLE, ROLLING, SCARED, UNROLLING)
 - `scute_time`?: `INT`
 - `id`: `STRING`
@@ -690,7 +696,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -744,6 +752,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `HasVisualFire`? (default false): `BOOL`
 - `data`?: an NBT tag
 - `Tags`?: list of `STRING`
+- `Owner`?: an NBT tag
 - `LeftOwner`? (default false): `BOOL`
 - `HasBeenShot`? (default false): `BOOL`
 - `life`? (default 0): `SHORT`
@@ -811,7 +820,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -839,6 +850,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `Variant`?: `INT`
 - `FromBucket`? (default false): `BOOL`
 - `id`: `STRING`
@@ -953,7 +965,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -1025,7 +1039,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -1053,6 +1069,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `HasNectar`? (default false): `BOOL`
 - `HasStung`? (default false): `BOOL`
 - `TicksSincePollination`? (default 0): `INT`
@@ -1062,8 +1079,8 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `flower_pos`?: `INT_ARRAY`
 - `anger_end_time`?: `LONG`
 - `AngerTime`?: `INT`
-- `id`: `STRING`
 - `angry_at`?: an NBT tag
+- `id`: `STRING`
 - `Passengers`?: list of an NBT tag
 
 <a id="save-entity-minecraft-birch_boat"></a>
@@ -1175,7 +1192,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -1294,7 +1313,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -1366,7 +1387,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -1417,6 +1440,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `HasVisualFire`? (default false): `BOOL`
 - `data`?: an NBT tag
 - `Tags`?: list of `STRING`
+- `Owner`?: an NBT tag
 - `LeftOwner`? (default false): `BOOL`
 - `HasBeenShot`? (default false): `BOOL`
 - `acceleration_power`? (default 0.1): `DOUBLE`
@@ -1467,7 +1491,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -1495,10 +1521,12 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `EatingHaystack`? (default false): `BOOL`
 - `Bred`? (default false): `BOOL`
 - `Temper`? (default 0): `INT`
 - `Tame`? (default false): `BOOL`
+- `Owner`?: `UUID`
 - `LastPoseTick`? (default 0): `LONG`
 - `id`: `STRING`
 - `Passengers`?: list of an NBT tag
@@ -1547,7 +1575,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -1575,10 +1605,12 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `EatingHaystack`? (default false): `BOOL`
 - `Bred`? (default false): `BOOL`
 - `Temper`? (default 0): `INT`
 - `Tame`? (default false): `BOOL`
+- `Owner`?: `UUID`
 - `LastPoseTick`? (default 0): `LONG`
 - `id`: `STRING`
 - `Passengers`?: list of an NBT tag
@@ -1627,7 +1659,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -1655,6 +1689,8 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
+- `Owner`?: `UUID`
 - `Sitting`? (default false): `BOOL`
 - `variant`?: `IDENTIFIER`
 - `sound_variant`?: an NBT tag
@@ -1706,7 +1742,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -1884,7 +1922,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -1912,6 +1952,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `IsChickenJockey`? (default false): `BOOL`
 - `EggLayTime`?: `INT`
 - `variant`?: `IDENTIFIER`
@@ -1963,7 +2004,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -2024,10 +2067,10 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `Command`?: `STRING`
 - `SuccessCount`? (default 0): `INT`
 - `TrackOutput`? (default true): `BOOL`
+- `LastOutput`?: a text component
 - `UpdateLastExecution`? (default true): `BOOL`
 - `LastExecution`? (default -1): `LONG`
 - `id`: `STRING`
-- `LastOutput`?: a text component
 - `Passengers`?: list of an NBT tag
 
 <a id="save-entity-minecraft-copper_golem"></a>
@@ -2074,7 +2117,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -2147,7 +2192,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -2175,6 +2222,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `variant`?: `IDENTIFIER`
 - `sound_variant`?: an NBT tag
 - `id`: `STRING`
@@ -2224,7 +2272,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -2295,7 +2345,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -2435,7 +2487,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -2511,7 +2565,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -2539,10 +2595,12 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `EatingHaystack`? (default false): `BOOL`
 - `Bred`? (default false): `BOOL`
 - `Temper`? (default 0): `INT`
 - `Tame`? (default false): `BOOL`
+- `Owner`?: `UUID`
 - `ChestedHorse`? (default false): `BOOL`
 - `Items`?: list
   - each: compound `ItemStackWithSlot`
@@ -2575,6 +2633,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `HasVisualFire`? (default false): `BOOL`
 - `data`?: an NBT tag
 - `Tags`?: list of `STRING`
+- `Owner`?: an NBT tag
 - `LeftOwner`? (default false): `BOOL`
 - `HasBeenShot`? (default false): `BOOL`
 - `acceleration_power`? (default 0.1): `DOUBLE`
@@ -2625,7 +2684,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -2680,6 +2741,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `HasVisualFire`? (default false): `BOOL`
 - `data`?: an NBT tag
 - `Tags`?: list of `STRING`
+- `Owner`?: an NBT tag
 - `LeftOwner`? (default false): `BOOL`
 - `HasBeenShot`? (default false): `BOOL`
 - `Item`?: recursive `ItemStack`
@@ -2734,7 +2796,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -2834,7 +2898,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -2887,6 +2953,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `HasVisualFire`? (default false): `BOOL`
 - `data`?: an NBT tag
 - `Tags`?: list of `STRING`
+- `Owner`?: an NBT tag
 - `LeftOwner`? (default false): `BOOL`
 - `HasBeenShot`? (default false): `BOOL`
 - `Item`?: recursive `ItemStack`
@@ -2941,7 +3008,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -2970,8 +3039,8 @@ accepts any numeric tag, and `Air` is a short on disk.
   - `Properties`?: map of `STRING` to `STRING`
 - `anger_end_time`?: `LONG`
 - `AngerTime`?: `INT`
-- `id`: `STRING`
 - `angry_at`?: an NBT tag
+- `id`: `STRING`
 - `Passengers`?: list of an NBT tag
 
 <a id="save-entity-minecraft-endermite"></a>
@@ -3018,7 +3087,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -3090,7 +3161,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -3149,6 +3222,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `data`?: an NBT tag
 - `Tags`?: list of `STRING`
 - `Warmup`? (default 0): `INT`
+- `Owner`?: an NBT tag
 - `id`: `STRING`
 - `Passengers`?: list of an NBT tag
 
@@ -3176,6 +3250,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `HasVisualFire`? (default false): `BOOL`
 - `data`?: an NBT tag
 - `Tags`?: list of `STRING`
+- `Owner`?: an NBT tag
 - `LeftOwner`? (default false): `BOOL`
 - `HasBeenShot`? (default false): `BOOL`
 - `Item`?: recursive `ItemStack`
@@ -3310,6 +3385,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `HasVisualFire`? (default false): `BOOL`
 - `data`?: an NBT tag
 - `Tags`?: list of `STRING`
+- `Owner`?: an NBT tag
 - `LeftOwner`? (default false): `BOOL`
 - `HasBeenShot`? (default false): `BOOL`
 - `acceleration_power`? (default 0.1): `DOUBLE`
@@ -3346,6 +3422,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `HasVisualFire`? (default false): `BOOL`
 - `data`?: an NBT tag
 - `Tags`?: list of `STRING`
+- `Owner`?: an NBT tag
 - `LeftOwner`? (default false): `BOOL`
 - `HasBeenShot`? (default false): `BOOL`
 - `Life`? (default 0): `INT`
@@ -3430,7 +3507,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -3458,6 +3537,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `Trusted`?: list of `UUID`
 - `Sleeping`? (default false): `BOOL`
 - `Type`?: enum `Fox$Variant` (var int, ids red/snow: RED, SNOW)
@@ -3510,7 +3590,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -3538,6 +3620,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `variant`?: `IDENTIFIER`
 - `id`: `STRING`
 - `Passengers`?: list of an NBT tag
@@ -3622,7 +3705,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -3694,7 +3779,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -3803,7 +3890,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -3878,7 +3967,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -3906,6 +3997,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `IsScreamingGoat`? (default false): `BOOL`
 - `HasLeftHorn`? (default true): `BOOL`
 - `HasRightHorn`? (default true): `BOOL`
@@ -3956,7 +4048,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -4027,7 +4121,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -4055,6 +4151,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `still_timeout`? (default 0): `INT`
 - `id`: `STRING`
 - `Passengers`?: list of an NBT tag
@@ -4103,7 +4200,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -4131,6 +4230,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `IsImmuneToZombification`? (default false): `BOOL`
 - `TimeInOverworld`? (default 0): `INT`
 - `CannotBeHunted`? (default false): `BOOL`
@@ -4224,7 +4324,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -4252,10 +4354,12 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `EatingHaystack`? (default false): `BOOL`
 - `Bred`? (default false): `BOOL`
 - `Temper`? (default 0): `INT`
 - `Tame`? (default false): `BOOL`
+- `Owner`?: `UUID`
 - `Variant`? (default 0): `INT`
 - `id`: `STRING`
 - `Passengers`?: list of an NBT tag
@@ -4304,7 +4408,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -4379,7 +4485,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -4493,7 +4601,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -4520,8 +4630,8 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `PlayerCreated`? (default false): `BOOL`
 - `anger_end_time`?: `LONG`
 - `AngerTime`?: `INT`
-- `id`: `STRING`
 - `angry_at`?: an NBT tag
+- `id`: `STRING`
 - `Passengers`?: list of an NBT tag
 
 <a id="save-entity-minecraft-item"></a>
@@ -4552,6 +4662,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `Age`? (default 0): `SHORT`
 - `PickupDelay`? (default 0): `SHORT`
 - `Owner`?: `UUID`
+- `Thrower`?: an NBT tag
 - `Item`?: recursive `ItemStack`
   - the codec: compound `ItemStack`
     - `id`: id in minecraft:item
@@ -4792,6 +4903,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `HasVisualFire`? (default false): `BOOL`
 - `data`?: an NBT tag
 - `Tags`?: list of `STRING`
+- `Owner`?: an NBT tag
 - `LeftOwner`? (default false): `BOOL`
 - `HasBeenShot`? (default false): `BOOL`
 - `Item`?: recursive `ItemStack`
@@ -4847,7 +4959,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -4875,10 +4989,12 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `EatingHaystack`? (default false): `BOOL`
 - `Bred`? (default false): `BOOL`
 - `Temper`? (default 0): `INT`
 - `Tame`? (default false): `BOOL`
+- `Owner`?: `UUID`
 - `ChestedHorse`? (default false): `BOOL`
 - `Items`?: list
   - each: compound `ItemStackWithSlot`
@@ -4912,6 +5028,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `HasVisualFire`? (default false): `BOOL`
 - `data`?: an NBT tag
 - `Tags`?: list of `STRING`
+- `Owner`?: an NBT tag
 - `LeftOwner`? (default false): `BOOL`
 - `HasBeenShot`? (default false): `BOOL`
 - `id`: `STRING`
@@ -4962,7 +5079,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -5099,7 +5218,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -5251,7 +5372,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -5279,6 +5402,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `Type`?: enum `MushroomCow$Variant` (var int, ids red/brown: RED, BROWN)
 - `stew_effects`?: list
   - each: compound `SuspiciousStewEffects$Entry`
@@ -5331,7 +5455,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -5359,10 +5485,12 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `EatingHaystack`? (default false): `BOOL`
 - `Bred`? (default false): `BOOL`
 - `Temper`? (default 0): `INT`
 - `Tame`? (default false): `BOOL`
+- `Owner`?: `UUID`
 - `ChestedHorse`? (default false): `BOOL`
 - `Items`?: list
   - each: compound `ItemStackWithSlot`
@@ -5415,7 +5543,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -5443,6 +5573,8 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
+- `Owner`?: `UUID`
 - `Sitting`? (default false): `BOOL`
 - `id`: `STRING`
 - `Passengers`?: list of an NBT tag
@@ -5556,7 +5688,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -5584,6 +5718,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `Trusting`? (default false): `BOOL`
 - `id`: `STRING`
 - `Passengers`?: list of an NBT tag
@@ -5760,7 +5895,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -5788,6 +5925,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `MainGene`?: enum `Panda$Gene` (var int, ids normal/lazy/worried/playful/brown/weak/aggressive: NORMAL, LAZY, WORRIED, PLAYFUL, BROWN, WEAK, AGGRESSIVE)
 - `HiddenGene`?: enum `Panda$Gene` (var int, ids normal/lazy/worried/playful/brown/weak/aggressive: NORMAL, LAZY, WORRIED, PLAYFUL, BROWN, WEAK, AGGRESSIVE)
 - `id`: `STRING`
@@ -5837,7 +5975,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -5908,7 +6048,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -5936,6 +6078,8 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
+- `Owner`?: `UUID`
 - `Sitting`? (default false): `BOOL`
 - `Variant`?: `INT`
 - `id`: `STRING`
@@ -5985,7 +6129,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -6058,7 +6204,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -6086,6 +6234,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `variant`?: `IDENTIFIER`
 - `sound_variant`?: an NBT tag
 - `id`: `STRING`
@@ -6135,7 +6284,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -6213,7 +6364,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -6286,7 +6439,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -6366,7 +6521,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -6458,7 +6615,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -6486,10 +6645,11 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `anger_end_time`?: `LONG`
 - `AngerTime`?: `INT`
-- `id`: `STRING`
 - `angry_at`?: an NBT tag
+- `id`: `STRING`
 - `Passengers`?: list of an NBT tag
 
 <a id="save-entity-minecraft-pufferfish"></a>
@@ -6536,7 +6696,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -6609,7 +6771,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -6637,6 +6801,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `RabbitType`?: `INT`
 - `MoreCarrotTicks`? (default 0): `INT`
 - `id`: `STRING`
@@ -6686,7 +6851,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -6766,7 +6933,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -6839,7 +7008,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -6867,6 +7038,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `Sheared`? (default false): `BOOL`
 - `Color`?: `BYTE`
 - `id`: `STRING`
@@ -6916,7 +7088,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -6970,6 +7144,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `HasVisualFire`? (default false): `BOOL`
 - `data`?: an NBT tag
 - `Tags`?: list of `STRING`
+- `Owner`?: an NBT tag
 - `LeftOwner`? (default false): `BOOL`
 - `HasBeenShot`? (default false): `BOOL`
 - `Steps`? (default 0): `INT`
@@ -6977,8 +7152,8 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `TYD`? (default 0.0): `DOUBLE`
 - `TZD`? (default 0.0): `DOUBLE`
 - `Dir`?: `BYTE`
+- `Target`?: an NBT tag
 - `id`: `STRING`
-- `Target`: `UUID`
 - `Passengers`?: list of an NBT tag
 
 <a id="save-entity-minecraft-silverfish"></a>
@@ -7025,7 +7200,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -7096,7 +7273,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -7168,7 +7347,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -7196,10 +7377,12 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `EatingHaystack`? (default false): `BOOL`
 - `Bred`? (default false): `BOOL`
 - `Temper`? (default 0): `INT`
 - `Tame`? (default false): `BOOL`
+- `Owner`?: `UUID`
 - `SkeletonTrap`? (default false): `BOOL`
 - `SkeletonTrapTime`? (default 0): `INT`
 - `id`: `STRING`
@@ -7250,7 +7433,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -7302,6 +7487,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `HasVisualFire`? (default false): `BOOL`
 - `data`?: an NBT tag
 - `Tags`?: list of `STRING`
+- `Owner`?: an NBT tag
 - `LeftOwner`? (default false): `BOOL`
 - `HasBeenShot`? (default false): `BOOL`
 - `acceleration_power`? (default 0.1): `DOUBLE`
@@ -7357,7 +7543,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -7385,6 +7573,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `id`: `STRING`
 - `Passengers`?: list of an NBT tag
 
@@ -7432,7 +7621,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -7484,6 +7675,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `HasVisualFire`? (default false): `BOOL`
 - `data`?: an NBT tag
 - `Tags`?: list of `STRING`
+- `Owner`?: an NBT tag
 - `LeftOwner`? (default false): `BOOL`
 - `HasBeenShot`? (default false): `BOOL`
 - `Item`?: recursive `ItemStack`
@@ -7577,6 +7769,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `HasVisualFire`? (default false): `BOOL`
 - `data`?: an NBT tag
 - `Tags`?: list of `STRING`
+- `Owner`?: an NBT tag
 - `LeftOwner`? (default false): `BOOL`
 - `HasBeenShot`? (default false): `BOOL`
 - `life`? (default 0): `SHORT`
@@ -7645,7 +7838,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -7696,6 +7891,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `HasVisualFire`? (default false): `BOOL`
 - `data`?: an NBT tag
 - `Tags`?: list of `STRING`
+- `Owner`?: an NBT tag
 - `LeftOwner`? (default false): `BOOL`
 - `HasBeenShot`? (default false): `BOOL`
 - `Item`?: recursive `ItemStack`
@@ -7815,7 +8011,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -7889,7 +8087,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -7960,7 +8160,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -7988,6 +8190,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `id`: `STRING`
 - `Passengers`?: list of an NBT tag
 
@@ -8035,7 +8238,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -8110,6 +8315,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `line_width`? (default 200): `INT`
 - `text_opacity`? (default -1): `BYTE`
 - `background`? (default 1073741824): `INT`
+- `shadow`? (default false): `BOOL`
+- `see_through`? (default false): `BOOL`
+- `default_background`? (default false): `BOOL`
 - `alignment`?: enum `Display$TextDisplay$Align` (var int, ids center/left/right: CENTER, LEFT, RIGHT)
 - `text`?: a text component
 - `id`: `STRING`
@@ -8144,6 +8352,7 @@ accepts any numeric tag, and `Air` is a short on disk.
   - `Name`: id in minecraft:block
   - `Properties`?: map of `STRING` to `STRING`
 - `explosion_power`? (default 4.0): `FLOAT`
+- `owner`?: an NBT tag
 - `id`: `STRING`
 - `Passengers`?: list of an NBT tag
 
@@ -8228,7 +8437,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -8256,10 +8467,12 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `EatingHaystack`? (default false): `BOOL`
 - `Bred`? (default false): `BOOL`
 - `Temper`? (default 0): `INT`
 - `Tame`? (default false): `BOOL`
+- `Owner`?: `UUID`
 - `ChestedHorse`? (default false): `BOOL`
 - `Items`?: list
   - each: compound `ItemStackWithSlot`
@@ -8294,6 +8507,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `HasVisualFire`? (default false): `BOOL`
 - `data`?: an NBT tag
 - `Tags`?: list of `STRING`
+- `Owner`?: an NBT tag
 - `LeftOwner`? (default false): `BOOL`
 - `HasBeenShot`? (default false): `BOOL`
 - `life`? (default 0): `SHORT`
@@ -8362,7 +8576,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -8436,7 +8652,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -8463,6 +8681,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `has_egg`? (default false): `BOOL`
 - `id`: `STRING`
 - `Passengers`?: list of an NBT tag
@@ -8511,7 +8730,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -8537,6 +8758,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `NoAI`? (default false): `BOOL`
 - `bound_pos`?: `INT_ARRAY`
 - `life_ticks`?: `INT`
+- `owner`?: an NBT tag
 - `id`: `STRING`
 - `Passengers`?: list of an NBT tag
 
@@ -8584,7 +8806,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -8678,7 +8902,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -8756,7 +8982,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -8836,7 +9064,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -8904,6 +9134,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `HasVisualFire`? (default false): `BOOL`
 - `data`?: an NBT tag
 - `Tags`?: list of `STRING`
+- `Owner`?: an NBT tag
 - `LeftOwner`? (default false): `BOOL`
 - `HasBeenShot`? (default false): `BOOL`
 - `acceleration_power`? (default 0.1): `DOUBLE`
@@ -8954,7 +9185,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -9031,7 +9264,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -9103,7 +9338,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -9154,6 +9391,7 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `HasVisualFire`? (default false): `BOOL`
 - `data`?: an NBT tag
 - `Tags`?: list of `STRING`
+- `Owner`?: an NBT tag
 - `LeftOwner`? (default false): `BOOL`
 - `HasBeenShot`? (default false): `BOOL`
 - `acceleration_power`? (default 0.1): `DOUBLE`
@@ -9205,7 +9443,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -9233,14 +9473,16 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
+- `Owner`?: `UUID`
 - `Sitting`? (default false): `BOOL`
 - `variant`?: `IDENTIFIER`
 - `CollarColor`?: `BYTE`
 - `anger_end_time`?: `LONG`
 - `AngerTime`?: `INT`
+- `angry_at`?: an NBT tag
 - `sound_variant`?: an NBT tag
 - `id`: `STRING`
-- `angry_at`?: an NBT tag
 - `Passengers`?: list of an NBT tag
 
 <a id="save-entity-minecraft-zoglin"></a>
@@ -9287,7 +9529,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -9359,7 +9603,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -9434,7 +9680,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -9462,10 +9710,12 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
 - `EatingHaystack`? (default false): `BOOL`
 - `Bred`? (default false): `BOOL`
 - `Temper`? (default 0): `INT`
 - `Tame`? (default false): `BOOL`
+- `Owner`?: `UUID`
 - `id`: `STRING`
 - `Passengers`?: list of an NBT tag
 
@@ -9513,7 +9763,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -9541,6 +9793,8 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `ForcedAge`? (default 0): `INT`
 - `AgeLocked`? (default false): `BOOL`
 - `InLove`? (default 0): `INT`
+- `LoveCause`?: an NBT tag
+- `Owner`?: `UUID`
 - `Sitting`? (default false): `BOOL`
 - `variant`?: `IDENTIFIER`
 - `id`: `STRING`
@@ -9590,7 +9844,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -9679,7 +9935,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -9709,8 +9967,8 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `DrownedConversionTime`? (default -1): `INT`
 - `anger_end_time`?: `LONG`
 - `AngerTime`?: `INT`
-- `id`: `STRING`
 - `angry_at`?: an NBT tag
+- `id`: `STRING`
 - `Passengers`?: list of an NBT tag
 
 <a id="save-level"></a>
@@ -9794,7 +10052,9 @@ accepts any numeric tag, and `Air` is a short on disk.
 - `sleeping_pos`?: `INT_ARRAY`
 - `Brain`?: compound `Brain$Packed`
   - `memories`: map of id in minecraft:memory_module_type to an NBT tag
+- `last_hurt_by_player`?: an NBT tag
 - `last_hurt_by_player_memory_time`? (default 0): `INT`
+- `last_hurt_by_mob`?: an NBT tag
 - `ticks_since_last_hurt_by_mob`? (default 0): `INT`
 - `equipment`?: compound of
   - keys: enum `EquipmentSlot` (var int, ids mainhand/offhand/feet/legs/chest/head/body/saddle: MAINHAND, OFFHAND, FEET, LEGS, CHEST, HEAD, BODY, SADDLE)
@@ -9863,11 +10123,11 @@ accepts any numeric tag, and `Air` is a short on disk.
   - `forced`? (default false): `BOOL`
 - `spawn_extra_particles_on_fall`? (default false): `BOOL`
 - `raid_omen_position`?: `INT_ARRAY`
+- `playerGameType`?: `INT`
+- `previousPlayerGameType`?: `INT`
 - `ShoulderEntityLeft`?: an NBT tag
 - `ShoulderEntityRight`?: an NBT tag
 - `DataVersion`: `INT`
-- `playerGameType`: `INT`
-- `previousPlayerGameType`?: `INT`
 - `RootVehicle`?: an NBT tag
 - `Dimension`: `STRING`
 - `ender_pearls`?: list of an NBT tag

@@ -2002,12 +2002,12 @@ and direction, so a packet added in a later version moves every id after it.
 - `containerId`: `CONTAINER_ID`
 - `offers`: list of
   - struct `MerchantOffer`
-    - `baseCostA`: struct `ItemCost`
+    - `buy`: struct `ItemCost`
       - `item`: id in item
       - `count`: `VAR_INT`
       - `components`: list of `TYPED_DATA_COMPONENT`
-    - `result`: `ITEM_STACK`
-    - `costB`: optional
+    - `sell`: `ITEM_STACK`
+    - `buyB`: optional
       - struct `ItemCost`
         - `item`: id in item
         - `count`: `VAR_INT`
@@ -2027,7 +2027,7 @@ and direction, so a packet added in a later version moves every id after it.
 <a id="pkt-clientbound-minecraft-move_entity_pos"></a>
 ### minecraft:move_entity_pos (clientbound, id 53)
 
-- `id`: `VAR_INT`
+- `entityId`: `VAR_INT`
 - `xa`: `SHORT`
 - `ya`: `SHORT`
 - `za`: `SHORT`
@@ -2036,7 +2036,7 @@ and direction, so a packet added in a later version moves every id after it.
 <a id="pkt-clientbound-minecraft-move_entity_pos_rot"></a>
 ### minecraft:move_entity_pos_rot (clientbound, id 54)
 
-- `id`: `VAR_INT`
+- `entityId`: `VAR_INT`
 - `xa`: `SHORT`
 - `ya`: `SHORT`
 - `za`: `SHORT`
@@ -2065,7 +2065,7 @@ and direction, so a packet added in a later version moves every id after it.
 <a id="pkt-clientbound-minecraft-move_entity_rot"></a>
 ### minecraft:move_entity_rot (clientbound, id 56)
 
-- `id`: `VAR_INT`
+- `entityId`: `VAR_INT`
 - `yRot`: `BYTE`
 - `xRot`: `BYTE`
 - `onGround`: `BOOL`
@@ -3897,7 +3897,7 @@ and direction, so a packet added in a later version moves every id after it.
             - `item`: id in item
             - `count`: `VAR_INT`
             - `components`: `COMPONENT_PATCH`
-          - `type`: enum `AdvancementType` (var int, ordinal: TASK, CHALLENGE, GOAL)
+          - `frame`: enum `AdvancementType` (var int, ordinal: TASK, CHALLENGE, GOAL)
           - `flags`: `INT`
           - `background`: struct `ClientAsset$ResourceTexture` (when `flags` & 1 != 0)
             - `texture`: `IDENTIFIER`
@@ -4604,12 +4604,12 @@ and direction, so a packet added in a later version moves every id after it.
 - `hand`: enum `InteractionHand` (var int, ordinal: MAIN_HAND, OFF_HAND)
 - `blockHit`: struct `BlockHitResult`
   - `pos`: `BLOCK_POS`
-  - `direction`: enum `Direction` (var int, ordinal: DOWN, UP, NORTH, SOUTH, WEST, EAST)
-  - `location`: `FLOAT`
-  - `x`: `FLOAT`
-  - `z`: `FLOAT`
+  - `face`: enum `Direction` (var int, ordinal: DOWN, UP, NORTH, SOUTH, WEST, EAST)
+  - `clickX`: `FLOAT`
+  - `clickY`: `FLOAT`
+  - `clickZ`: `FLOAT`
   - `inside`: `BOOL`
-  - `worldBorderHit`: `BOOL`
+  - `worldBorder`: `BOOL`
 - `sequence`: `VAR_INT`
 
 <a id="pkt-serverbound-minecraft-use_item"></a>

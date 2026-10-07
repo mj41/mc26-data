@@ -13,8 +13,8 @@ Minecraft 26.1 (26.1), protocol 775, data version 4786.
 | data version | 4786 |
 | Java | 25 |
 | server jar | 3872a7f07a1a595e651aef8b058dfc2bb3772f46 |
-| extracted | 2026-10-03T15:37:21Z |
-| extractor | 190a89967ae4 |
+| extracted | 2026-10-07T14:37:42Z |
+| extractor | 97c45e4f87c8 |
 
 `packet_schema.json` describes every packet, and every data component an item stack can carry,
 as a tree of nodes; the leaves are named primitives. This document says what each node kind and
@@ -236,6 +236,7 @@ was checked.
 
 | kind | in this version's packets and components | what it is |
 |---|---:|---|
+| [`array`](#array) | 0 | Exactly `size` repetitions of `elem` with no count on the wire; `size` is a number in the node itself (the four lines of a sign, ByteBufCodecs.fixedSizeList(4)). |
 | [`bits`](#bits) | 8 | Nothing new: exactly the bytes of the primitive named by `of`. |
 | [`case`](#case) | 936 | Nothing of its own. |
 | [`counted`](#counted) | 0 | Exactly N repetitions of `elem` with NO count of its own in front of them; N is the value of an earlier sibling field of the enclosing struct, named by `count`. |
@@ -285,6 +286,13 @@ was checked.
 **On the wire.** Exactly N repetitions of `elem` with NO count of its own in front of them; N is the value of an earlier sibling field of the enclosing struct, named by `count`. It exists because a count is not always adjacent to what it counts: DataComponentPatch writes both of its counts before either run, and VecDelta.read(buf, stepCount) is handed its count by the packet that called it.
 
 **Keys.** `count` = the name of an earlier field of the same struct holding the repetition count, or a dotted name for one run of bits of a packed one ("flags.stepCount", see `bits`), as the schema names it before any naming override (the same rule `when.field` follows); `elem` = the node repeated. No max, no prefix of its own. A `counted` with no `count` is a hole: hasHole reports it, so a repetition nobody could name never passes as a full packet.
+
+
+### array
+
+**On the wire.** Exactly `size` repetitions of `elem` with no count on the wire; `size` is a number in the node itself.
+
+**Keys.** `size` = the number of elements, always the same; `elem` = the node repeated. A writer with another number of elements has nothing to write: the reader could not know.
 
 
 ### dispatch
