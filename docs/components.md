@@ -930,16 +930,16 @@ its entries.
 <a id="cmp-minecraft-sign_text_back"></a>
 ### minecraft:sign_text_back
 
-- `messages`: `TEXT`
-- `filteredMessagesForSerialization`: optional `TEXT`
+- `messages`: array
+- `filteredMessagesForSerialization`: optional array
 - `color`: enum `DyeColor` (var int, ordinal: WHITE, ORANGE, MAGENTA, LIGHT_BLUE, YELLOW, LIME, PINK, GRAY, LIGHT_GRAY, CYAN, PURPLE, BLUE, BROWN, GREEN, RED, BLACK)
 - `hasGlowingText`: `BOOL`
 
 <a id="cmp-minecraft-sign_text_front"></a>
 ### minecraft:sign_text_front
 
-- `messages`: `TEXT`
-- `filteredMessagesForSerialization`: optional `TEXT`
+- `messages`: array
+- `filteredMessagesForSerialization`: optional array
 - `color`: enum `DyeColor` (var int, ordinal: WHITE, ORANGE, MAGENTA, LIGHT_BLUE, YELLOW, LIME, PINK, GRAY, LIGHT_GRAY, CYAN, PURPLE, BLUE, BROWN, GREEN, RED, BLACK)
 - `hasGlowingText`: `BOOL`
 

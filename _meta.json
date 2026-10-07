@@ -8,6 +8,6 @@
   "server_jar_url": "https://piston-data.mojang.com/v1/objects/33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c/server.jar",
   "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
   "extractor_repo": "github.com/mj41/mc26",
-  "extractor_commit": "190a89967ae4",
-  "extracted_at": "2026-10-03T15:39:48Z"
+  "extractor_commit": "97c45e4f87c8",
+  "extracted_at": "2026-10-07T15:24:30Z"
 }
