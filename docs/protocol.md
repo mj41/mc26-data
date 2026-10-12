@@ -13,8 +13,8 @@ Minecraft 26.1 (26.1), protocol 775, data version 4786.
 | data version | 4786 |
 | Java | 25 |
 | server jar | 3872a7f07a1a595e651aef8b058dfc2bb3772f46 |
-| extracted | 2026-10-07T14:37:42Z |
-| extractor | 97c45e4f87c8 |
+| extracted | 2026-10-12T16:18:08Z |
+| extractor | 2e62abc1347f |
 
 `packet_schema.json` describes every packet, and every data component an item stack can carry,
 as a tree of nodes; the leaves are named primitives. This document says what each node kind and

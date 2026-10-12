@@ -2,8 +2,8 @@
 
 Game data of Minecraft: Java Edition 26.1 (protocol 775, data version
 4786, Java 25), extracted from Mojang's server jar
-(`3872a7f07a1a595e651aef8b058dfc2bb3772f46`) by [mc26](https://github.com/mj41/mc26) `97c45e4f87c8` on
-2026-10-07T14:37:42Z. Details in `_meta.json`.
+(`3872a7f07a1a595e651aef8b058dfc2bb3772f46`) by [mc26](https://github.com/mj41/mc26) `2e62abc1347f` on
+2026-10-12T16:18:08Z. Details in `_meta.json`.
 
 | file | content |
 |---|---|
